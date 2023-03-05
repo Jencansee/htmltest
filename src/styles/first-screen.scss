@@ -1,0 +1,58 @@
+.first-screen {
+	min-height: calc(100vh - 8rem);
+	background-repeat: no-repeat;
+	background-image: url('/public/img/back.png');
+	background-position: center 38%;
+	background-size: cover;
+	color: #fff;
+	
+	.container { 
+		display: flex; align-items: center;
+	}
+
+	&__content {
+		max-width: 800px;
+		padding: 10vh 1rem;
+	}
+
+	h1 {
+		font-size: calc(2.2rem + 1vw); line-height: 1.4;
+		span {
+			display: block;
+			font-size: calc(1.7rem + 2vw);
+		}
+	}
+
+	&__service {
+		font-weight: 600;
+		font-size: calc(2rem + 1vw);
+		margin: calc(6rem + 1.5vw) 0 calc(3rem + 1vw);
+	}
+}
+
+
+@media (min-width: 390px) {
+	.first-screen 	h1 {
+		font-size: calc(2.4rem + 1vw);
+		span {
+			font-size: calc(1.8rem + 2vw);
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	.first-screen h1 { 
+		font-size: calc(6.4rem + 1vw); 
+		span { font-size: calc(4rem + 1vw); }
+	}
+}
+
+@media(min-width: 992px) { 
+	.first-screen { 
+		min-height: calc(100vh - 10rem);
+		background-position: center; 
+		&__content {
+			padding: 15vh 2rem;
+		}
+	} 
+}

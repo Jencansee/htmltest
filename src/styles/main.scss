@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+*, ::before, ::after {
+	box-sizing: border-box; padding: 0; margin: 0;
+}
+
+html.no-scroll, html.no-scroll body {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+:root {
+	color: $dark;
+	font-size: 68.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.8rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a { text-decoration: none; color: #3a3a3a; }
+
+.title { font-size: 3rem; }
+
+//# containers
+.container {
+	width: 100%;
+	max-width: 1366px;
+	padding: 0 1.5rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.btn {
+	display: block;
+	background-color: $accent;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	font-weight: 600;
+	padding: 1.5rem 3.5rem;
+	transition: .25s ease-in-out background-color;
+	
+	&:hover { background-color: #2879B7; }
+	&:active { background-color: #73AFDD; }
+}
+
+//* imports
+@import './first-screen.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/modal.scss';
